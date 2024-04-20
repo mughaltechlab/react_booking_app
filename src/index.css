@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+.primary-color {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600  inline-block;
+}
+
+/* body {
+    background-color: black;
+} */
+
+.bg-primary-color {
+    @apply bg-gradient-to-r from-orange-400 to-pink-600  inline-block;
+}
+
+/* anime */
+.slide-left-anime{
+    animation: slideAnime .55s linear;
+    animation-delay: 300ms;
+    transition: all;
+}
+@keyframes slideAnime {
+    0%{
+        left: -30%;
+        opacity: 0;
+    }
+    50%{
+        left: -30%;
+        opacity: 1;
+    }
+    100%{
+        left: 0%;
+    }
+}
