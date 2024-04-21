@@ -8,16 +8,17 @@
     --bg-gradient: linear-gradient(-45deg, )
                     #06CCF1, #07B2DE, #0892C9 (blue shade) 
                     #7C83D7, #7076C2, #52558A (purple shade)
-# create todo:
+# create todo:  ✅
     columns(3)
         checked/unchecked box,
+        date(end)
+        hrs
         title of work (such as , sign up form etc)
-        date(start to end)
 * ------------------------------------------------------------------------
 
 # project steps:
     Design: 
-    * step 01 form:
+    * step 01 form: ✅
         => Sign up
         => Sign in
     * step 02 Dashboard:
