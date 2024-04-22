@@ -37,9 +37,16 @@
     => images
 * components
     * => elements
-        =>  button.jsx
-        =>  input.jsx
-    * => SignIn.jsx
-    * => SignUp.jsx
+        => signUp_form.jsx
+        => signIn_form.jsx
+    * => Auth.jsx (import both form components)
     * => Dashboard.jsx
 * services
+
+
+
+
+<!-- todo: remote post -->
+=====================================================================================================
+https://www.linkedin.com/posts/kiran-pitambar-bharambe-332336118_remoteopportunity-jobsearching-jobseekeers-activity-7188048842058022912-UUSF?utm_source=share&utm_medium=member_desktop
+=====================================================================================================
