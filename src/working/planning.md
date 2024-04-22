@@ -21,7 +21,12 @@
     * step 01 form: ✅
         => Sign up
         => Sign in
-    * step 02 Dashboard:
+    * step 02 bookingCard ✅
+    * step 03 addBookingCardForm:
+        => title, description, duration
+        => weeks (holidays && (sat,sun)::checked, working days && (!sat,!sun)::all-checked,):
+            : checkbox with evrey week day
+    * step 04 Dashboard:
         => header
             : Navbar(menu links),
             : optionBtn(profile, meeting, logout)
