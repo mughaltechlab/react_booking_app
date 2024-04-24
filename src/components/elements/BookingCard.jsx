@@ -24,12 +24,12 @@ function BookingCard() {
         <div className="px-4 mt-4 flex gap-2 justify-start items-center">
             <div 
                 onClick={()=>setToggle(prevToggle=>!prevToggle)} 
-                className="
+                className={`
                 w-10 h-5 md:w-12 md:h-6 p-[2px]
                 cursor-pointer
                 border border-violet-500 rounded-full
                 relative
-            ">
+            `}>
                 <div className={`
                     w-4 h-4 md:w-5 md:h-5 rounded-full
                     ${isToggle ? 'bg-violet-500' : 'bg-violet-300'} 

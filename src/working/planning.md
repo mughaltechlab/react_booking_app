@@ -1,3 +1,6 @@
+<!-- todo: (header logo anime side) -->
+
+
 # create react app     ✅
 # install tailwind css ✅
 # screens:

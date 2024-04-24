@@ -14,7 +14,7 @@ html{
 } */
 
 .bg-primary-color {
-    @apply bg-gradient-to-r from-violet-300 to-violet-600  inline-block;
+    @apply bg-gradient-to-t from-violet-300 to-violet-400  inline-block;
 }
 
 /* anime */
