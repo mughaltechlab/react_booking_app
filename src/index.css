@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 .primary-color {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600  inline-block;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-violet-600  inline-block;
 }
 
 /* body {
@@ -14,7 +14,7 @@ html{
 } */
 
 .bg-primary-color {
-    @apply bg-gradient-to-r from-orange-400 to-pink-600  inline-block;
+    @apply bg-gradient-to-r from-violet-300 to-violet-600  inline-block;
 }
 
 /* anime */
