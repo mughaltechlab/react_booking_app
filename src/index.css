@@ -21,9 +21,6 @@ html{
 .slide-left-anime{
     animation: slideAnime .55s linear;
     /* animation-delay: 300ms; */
-    position: absolute;
-    top: 0;
-    left: 0;
     /* transition: all; */
 }
 @keyframes slideAnime {
@@ -36,6 +33,18 @@ html{
     }
     to{
         transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.opacity-anime{
+    animation: opacitytAnime .33s linear;
+}
+@keyframes opacitytAnime {
+    from{
+       opacity: 0;
+    }
+    to{
         opacity: 1;
     }
 }

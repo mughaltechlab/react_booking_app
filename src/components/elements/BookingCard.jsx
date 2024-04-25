@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 
-function BookingCard() {
+function BookingCard({data}) {
 
     // toggle switch
-    const [isToggle, setToggle] = useState(false)
+    const [isToggle, setToggle] = useState(data.bookingOff)
     
   return (
     <div className='border-t-4 border-violet-500
@@ -11,13 +11,13 @@ function BookingCard() {
         bg-white shadow-lg rounded-md
         flex flex-col
     '>
-        {/* title */}
-        <p className="font-bold capitalize px-4">15 minute meeting</p>
+        {/* title */ console.log(isToggle)}
+        <p className="font-bold capitalize px-4">{data.title}</p>
         {/* meeting link */}
         <p className="text-[12px] font-semibold mt-2 px-4
                     border-b py-2
                     text-violet-400 flex justify-between">
-            <span>/15-minute-meeting</span>
+            <span>/{data.title}</span>
             <span className='cursor-pointer'>Copy link</span>
         </p>
         {/* booking on/off switch */}
@@ -38,16 +38,16 @@ function BookingCard() {
                     absolute top-[50%] -translate-y-[50%] 
                 `}></div>
             </div>
-            <span className={`text-[12px] ${isToggle ? 'text-gray-600' : 'text-gray-400'} `}>Booking is OFF</span>
+            <span className={`text-[12px] ${isToggle ? 'text-gray-600' : 'text-gray-400'} `}>Booking is {isToggle?'ON':'OFF'}</span>
         </div>
         {/* duration */}
         <p className="px-4 text-[12px] mt-4">
             {/* icon */}
-            <i className="bi bi-clock"></i> <span className='sml-2'>15 minutes</span>
+            <i className="bi bi-clock"></i> <span className='sml-2'>{data.duration} minutes</span>
         </p>
         {/* description */}
         <div className="px-4 w-full h-[100px] text-[14px] flex justify-center items-center text-justify mt-4 border-y">
-            <p className="w-full h-[80px] overflow-hidden overflow-y-scroll px-2 ">My 15 minutes meeting</p>
+            <p className="w-full h-[80px] overflow-hidden overflow-y-scroll px-2 ">{data.desc}</p>
         </div>
         {/* buttons */}
         <div className="flex justify-end gap-2 mt-auto px-4 transition-all ">
