@@ -20,19 +20,22 @@ html{
 /* anime */
 .slide-left-anime{
     animation: slideAnime .55s linear;
-    animation-delay: 300ms;
-    transition: all;
+    /* animation-delay: 300ms; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transition: all; */
 }
 @keyframes slideAnime {
-    0%{
-        left: -30%;
+    from{
+        transform: translateX(-100%);
         opacity: 0;
     }
     50%{
-        left: -30%;
-        opacity: 1;
+        opacity: 0;
     }
-    100%{
-        left: 0%;
+    to{
+        transform: translateX(0%);
+        opacity: 1;
     }
 }

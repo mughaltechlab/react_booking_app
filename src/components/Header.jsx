@@ -10,7 +10,9 @@ function Header() {
         flex items-center justify-between
         ">
         {/* logo */}
-        <div className="md:text-[24px] font-bold primary-color border-l-2 overflow-hidden"><span>EasyMeet</span></div>
+        <div className="md:text-[24px] font-bold border-l-2 relative ">
+            <span className='primary-color slide-left-anime absolute' style={{transition:'all 2s linear'}}>EasyMeet</span>
+        </div>
         <div className='flex items-center gap-4'>
             {/* navigaton menu */}
             <ul className="hidden md:flex gap-2">
