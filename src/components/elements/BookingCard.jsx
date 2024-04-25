@@ -23,7 +23,7 @@ function BookingCard({data}) {
         {/* booking on/off switch */}
         <div className="px-4 mt-4 flex gap-2 justify-start items-center">
             <div 
-                onClick={()=>setToggle(prevToggle=>!prevToggle)} 
+                onClick={()=>setToggle(prevToggle=>!prevToggle)}
                 className={`
                 w-10 h-5 md:w-12 md:h-6 p-[2px]
                 cursor-pointer

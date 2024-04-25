@@ -11,11 +11,11 @@ function Home() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element:<> <MyBooking /> </>
+            element:<><Header /><MyBooking /> </>
         },
         {
             path: '/schedule',
-            element:<MySchedule />
+            element:<><Header /><MySchedule /></>
         }
     ])
     
@@ -25,7 +25,7 @@ function Home() {
         flex flex-col
     ">
         {/* header */}
-        <Header />
+        
         {/* main */}
         <div className="flex-grow">
             <RouterProvider router={router} />

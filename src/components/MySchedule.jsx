@@ -2,7 +2,7 @@ import React from 'react'
 
 function MySchedule() {
   return (
-    <div>MySchedule</div>
+    <div className='overflow-y-auto'>MySchedule</div>
   )
 }
 
