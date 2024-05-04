@@ -6,6 +6,7 @@ import './index.css'
 import Layout from './Layout.jsx'
 import MyBooking from './components/MyBooking.jsx'
 import MySchedule from './components/MySchedule.jsx'
+import AddBookingForm from './components/AddBookingForm.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         {
           path: 'schedule',
           element: <MySchedule />
+        },
+        {
+          path: 'addBookingForm',
+          element: <AddBookingForm />
         }
       ]
   },
