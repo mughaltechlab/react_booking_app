@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AddBookingForm() {
   return (
-    // <div className="fixed w-dvw h-dvh">
+    <div className="
+        lg:max-w-[1000px] sm:max-w-[700px]  w-full md:px-[40px] py-[40px] mx-auto
+        flex justify-center items-center
+    ">
         <div className='
             w-full sm:w-[500px] px-4 py-5 sm:shadow-lg bg-white border-t-4 border-violet-400 rounded-md
             flex flex-col gap-4
@@ -116,12 +120,14 @@ function AddBookingForm() {
 
             {/* buttons */}
             <div className="flex justify-end gap-2 mt-auto px-4 transition-all ">
-                <button className='w-20 h-8 border border-pink-400 rounded duration-200 hover:bg-pink-300 hover:shadow-md'>Cancel</button>
+                <Link to={'/'}>
+                    <button className='w-20 h-8 border border-pink-400 rounded duration-200 hover:bg-pink-300 hover:shadow-md'>Cancel</button>
+                </Link>
                 <button className='px-4 h-8 border border-violet-400 rounded duration-200 hover:bg-violet-300 hover:shadow-md'>Add Booking</button>
             </div>
             
         </div>
-    // </div>
+     </div>
   )
 }
 

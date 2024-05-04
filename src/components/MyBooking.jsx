@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import BookingData from './bookingData'
 import BookingCard from './elements/BookingCard'
-import AddBookingForm from './AddBookingForm';
+import { Link } from 'react-router-dom';
 
 function MyBooking() {
 
-  const [isAdd, setIsAdd] = useState(false);
+  // const [isAdd, setIsAdd] = useState(false);
   
   return (
     <div className='
@@ -13,12 +13,11 @@ function MyBooking() {
           md:grid lg:grid-cols-3 md:grid-cols-2 gap-y-4
           flex justify-center items-center flex-col
     '>
-      {
-        !isAdd && <AddBookingForm />
-      }
       {/* add button */}
       <div className="col-span-full">
-        <button className='bg-primary-color px-[30px] py-2 text-white font-bold rounded flex justify-center items-center '><span>ADD</span><i className="bi bi-plus text-[18px]"></i> </button>
+       <Link to={'addBookingForm'}>
+          <button className='bg-primary-color px-[30px] py-2 text-white font-bold rounded flex justify-center items-center '><span>ADD</span><i className="bi bi-plus text-[18px]"></i> </button>
+       </Link>
       </div>
       {
         BookingData.map((item,i)=>{

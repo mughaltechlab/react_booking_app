@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './index.css'
 import Layout from './Layout.jsx'
 import MyBooking from './components/MyBooking.jsx'
 import MySchedule from './components/MySchedule.jsx'
+import Auth from './components/Auth.jsx'
 import AddBookingForm from './components/AddBookingForm.jsx'
+import Intro from './components/Intro.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,16 @@ const router = createBrowserRouter([
       element: <Layout />,
       children: [
         {
-          path: '',
+          path: 'myBooking',
           element: <MyBooking />
+        },
+        {
+          path: '',
+          element: <Intro />
+        },
+        {
+          path: 'auth',
+          element: <Auth />
         },
         {
           path: 'schedule',
