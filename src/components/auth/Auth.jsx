@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import SignupForm from './elements/SignupForm'
-import SigninForm from './elements/SigninForm'
-import bgImg from '../assets/svg2.svg'
+import SignupForm from './SignupForm'
+import SigninForm from './SigninForm'
+// import bgImg from '../assets/svg2.svg'
 
 
 function Auth() {
@@ -10,7 +10,7 @@ function Auth() {
 
 
   return (
-    <div className={` bg-[${bgImg}]
+    <div className={` 
         lg:max-w-[1000px] sm:max-w-[700px]  w-full md:px-[40px] py-[40px] mx-auto
         flex justify-center items-center
     `}>

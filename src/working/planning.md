@@ -1,4 +1,5 @@
 <!-- todo: (header logo anime side) -->
+<!-- todo: check Link to={} and set condition for show and hide nav on intro and dashboard -->
 
 
 # create react app     ✅

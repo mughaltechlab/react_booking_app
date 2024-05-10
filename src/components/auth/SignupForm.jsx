@@ -1,7 +1,12 @@
 import React , {useState} from 'react'
+import { useNavigate } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function SignupForm() {
-    const [isShow, setIsShow] = useState(false)
+    const [isShow, setIsShow] = useState(false);
+
+    const navigate = useNavigate();
+    
   return (
     <form action="">
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4'>
@@ -111,13 +116,22 @@ function SignupForm() {
             </div>
             {/* signup btn */}
             <div className='sm:col-span-2'>
-                <button className="
-                    w-full px-4 py-3
-                    transition-all duration-200 ease-linear
-                    rounded-md hover:bg-violet-800 border-violet-600
-                    focus:ring focus:ring-violet-300 bg-violet-600 text-white 
-                    font-semibold text-lg
-                ">Sign up</button>
+            <button onClick={()=>{navigate('authToMyBooking')}} className="
+                            w-full px-4 py-3
+                            transition-all duration-200 ease-linear
+                            rounded-md hover:bg-violet-800 border-violet-600
+                            focus:ring focus:ring-violet-300 bg-violet-600 text-white 
+                            font-semibold text-lg
+                        ">Sign up</button>
+               {/* <Link to={'myBooking'} >
+                    <button className="
+                            w-full px-4 py-3
+                            transition-all duration-200 ease-linear
+                            rounded-md hover:bg-violet-800 border-violet-600
+                            focus:ring focus:ring-violet-300 bg-violet-600 text-white 
+                            font-semibold text-lg
+                        ">Sign up</button>
+               </Link>  */}
             </div>
             {/* or */}
             <div className='sm:col-span-2 relative my-4'>

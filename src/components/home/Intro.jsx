@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import img1 from '../assets/svg2.svg'
+import img1 from '../../assets/svg2.svg'
 import { Link } from 'react-router-dom'
 
 const cardData = [

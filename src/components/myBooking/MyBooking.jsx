@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import BookingData from './bookingData'
-import BookingCard from './elements/BookingCard'
+import BookingCard from './BookingCard'
 import { Link } from 'react-router-dom';
 
 function MyBooking() {
