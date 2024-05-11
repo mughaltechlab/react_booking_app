@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import img1 from '../../assets/svg2.svg'
+import img1 from '../../../assets/svg2.svg'
 import { Link } from 'react-router-dom'
 
 const cardData = [
@@ -147,7 +147,7 @@ function Intro() {
                     Your Gateway to Seamless Scheduling!
                 </span>
                     {/* <button className='bg-primary-color px-[30px] py-2 text-white font-bold rounded flex justify-center items-center '> */}
-                        <Link to={'auth'} 
+                        <Link to={'/auth'} 
                             className='sideAnime w-[200px] md:w-[200px] text-[18px] 
                             bg-primary-color px-[30px] py-2 text-white font-bold rounded flex justify-center items-center 
                         ' >

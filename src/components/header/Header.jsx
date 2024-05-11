@@ -24,7 +24,7 @@ function Header() {
                 <div className='flex items-center gap-4'>
                     {/* navigaton menu */}
                     <ul className="hidden md:flex gap-4 font-semibold text-[14px]">
-                        <NavLink to={'myBooking'} className={({isActive})=>`${isActive ? "text-violet-500" : "text-gray-500"}`} ><li className=' border-b-2 border-transparent hover:border-b-2 hover:border-violet-300 p-2 cursor-pointer transition-all duration-200'>My Booking</li></NavLink>
+                        <NavLink to={'/myBooking'} className={({isActive})=>`${isActive ? "text-violet-500" : "text-gray-500"}`} ><li className=' border-b-2 border-transparent hover:border-b-2 hover:border-violet-300 p-2 cursor-pointer transition-all duration-200'>My Booking</li></NavLink>
                         <NavLink to={'schedule'} className={({isActive})=>`${isActive ? "text-violet-500" : "text-gray-500"}`} ><li className=' border-b-2 border-transparent hover:border-b-2 hover:border-violet-300 p-2 cursor-pointer transition-all duration-200'>My Schedule</li></NavLink>
                     </ul>
                     {/* menu icon on tablet */}

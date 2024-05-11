@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function SignupForm() {
     const [isShow, setIsShow] = useState(false);
@@ -116,14 +116,14 @@ function SignupForm() {
             </div>
             {/* signup btn */}
             <div className='sm:col-span-2'>
-            <button onClick={()=>{navigate('authToMyBooking')}} className="
+            {/* <button onClick={()=>{navigate('authToMyBooking')}} className="
                             w-full px-4 py-3
                             transition-all duration-200 ease-linear
                             rounded-md hover:bg-violet-800 border-violet-600
                             focus:ring focus:ring-violet-300 bg-violet-600 text-white 
                             font-semibold text-lg
-                        ">Sign up</button>
-               {/* <Link to={'myBooking'} >
+                        ">Sign up</button> */}
+               <Link to={'myBooking'}  >
                     <button className="
                             w-full px-4 py-3
                             transition-all duration-200 ease-linear
@@ -131,7 +131,7 @@ function SignupForm() {
                             focus:ring focus:ring-violet-300 bg-violet-600 text-white 
                             font-semibold text-lg
                         ">Sign up</button>
-               </Link>  */}
+               </Link> 
             </div>
             {/* or */}
             <div className='sm:col-span-2 relative my-4'>
