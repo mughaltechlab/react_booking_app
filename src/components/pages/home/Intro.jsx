@@ -126,8 +126,7 @@ function Intro() {
     
   return (
     <div className='
-          lg:max-w-[1200px] sm:max-w-[800px]  w-full md:px-[40px] py-[40px] mx-auto
-          
+          lg:max-w-[1200px] sm:max-w-[800px]  w-full md:px-[40px] py-[40px] mx-auto     
     '>
         {/* SEC1 HERO SECTION some hero animation */}
         <section className="

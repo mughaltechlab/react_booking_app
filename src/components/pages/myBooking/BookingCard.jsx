@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React, {useState} from 'react'
 
 function BookingCard({data}) {
@@ -52,7 +53,7 @@ function BookingCard({data}) {
         {/* buttons */}
         <div className="flex justify-end gap-2 mt-auto px-4 transition-all ">
             <button className='w-20 h-8 border border-pink-400 rounded duration-200 hover:bg-pink-300 hover:shadow-md'>Delete</button>
-            <button className='w-20 h-8 border border-violet-400 rounded duration-200 hover:bg-violet-300 hover:shadow-md'>Edit</button>
+            <Link to={'/addBookingForm'}><button className='w-20 h-8 border border-violet-400 rounded duration-200 hover:bg-violet-300 hover:shadow-md'>Edit</button></Link>
         </div>
     </div>
   )

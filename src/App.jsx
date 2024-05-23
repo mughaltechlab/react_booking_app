@@ -23,7 +23,7 @@ function App() {
         <Route path='/auth/myBooking/addBookingForm' element={<AddBookingForm /> } />
         <Route path='/schedule' element={<MySchedule />} />
         <Route path='/auth' element={<Auth />} />
-        <Route path='/' element={<Intro />} />
+        <Route path='/addBookingForm' element={<AddBookingForm />} />
       </Routes>
       <Footer />
     </div>
